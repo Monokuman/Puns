@@ -16,6 +16,8 @@
 		0823D5DE1F3366440064872D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D5DD1F3366440064872D /* StartViewController.swift */; };
 		0823D5E01F3369120064872D /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D5DF1F3369120064872D /* DogViewController.swift */; };
 		0823D5E21F336BF70064872D /* DogPunsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0823D5E11F336BF70064872D /* DogPunsFile.swift */; };
+		5D51B8331F34B64200210CBC /* BearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D51B8321F34B64200210CBC /* BearViewController.swift */; };
+		5D51B8351F34B65A00210CBC /* BearPunsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D51B8341F34B65A00210CBC /* BearPunsFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0823D5DD1F3366440064872D /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0823D5DF1F3369120064872D /* DogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
 		0823D5E11F336BF70064872D /* DogPunsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogPunsFile.swift; sourceTree = "<group>"; };
+		5D51B8321F34B64200210CBC /* BearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearViewController.swift; sourceTree = "<group>"; };
+		5D51B8341F34B65A00210CBC /* BearPunsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearPunsFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				0823D5C91F3255070064872D /* AppDelegate.swift */,
 				0823D5CB1F3255070064872D /* ViewController.swift */,
 				0823D5CD1F3255070064872D /* Main.storyboard */,
+				5D51B8321F34B64200210CBC /* BearViewController.swift */,
+				5D51B8341F34B65A00210CBC /* BearPunsFile.swift */,
 				0823D5E11F336BF70064872D /* DogPunsFile.swift */,
 				0823D5DF1F3369120064872D /* DogViewController.swift */,
 				0823D5DD1F3366440064872D /* StartViewController.swift */,
@@ -149,10 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D51B8331F34B64200210CBC /* BearViewController.swift in Sources */,
 				0823D5CC1F3255070064872D /* ViewController.swift in Sources */,
 				0823D5DE1F3366440064872D /* StartViewController.swift in Sources */,
 				0823D5DC1F3360330064872D /* Puns.swift in Sources */,
 				0823D5E01F3369120064872D /* DogViewController.swift in Sources */,
+				5D51B8351F34B65A00210CBC /* BearPunsFile.swift in Sources */,
 				0823D5E21F336BF70064872D /* DogPunsFile.swift in Sources */,
 				0823D5CA1F3255070064872D /* AppDelegate.swift in Sources */,
 			);

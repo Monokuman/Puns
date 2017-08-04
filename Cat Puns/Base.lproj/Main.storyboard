@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jrK-ls-noR">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jrK-ls-noR">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,21 +18,23 @@
                         <viewControllerLayoutGuide type="bottom" id="AmH-cq-rRm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ovz-UY-3oq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTx-jG-XrT">
-                                <rect key="frame" x="0.0" y="34" width="375" height="310"/>
+                                <rect key="frame" x="0.0" y="64" width="158" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Cats" backgroundImage="cute-cat-11"/>
+                                <state key="normal" title="Cats" backgroundImage="cute-cat-11">
+                                    <color key="titleColor" red="1" green="0.089263750714253187" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="catPressed:" destination="Bgj-Rq-EYf" eventType="touchUpInside" id="T30-m3-UEz"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="xTR-YC-PfL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JD-pC-9En">
-                                <rect key="frame" x="0.0" y="345" width="375" height="322"/>
+                                <rect key="frame" x="0.0" y="316" width="320" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Dogs" backgroundImage="Dog">
@@ -43,18 +45,29 @@
                                     <segue destination="TR6-uE-Aej" kind="show" id="poy-g3-UWs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2m4-3P-0aL">
+                                <rect key="frame" x="156" y="64" width="164" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Bears" backgroundImage="Bear Waving"/>
+                                <connections>
+                                    <action selector="bearPressed:" destination="Bgj-Rq-EYf" eventType="touchUpInside" id="98h-Vk-107"/>
+                                    <segue destination="jva-PG-BbM" kind="show" id="CSc-90-yxZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="a91-xV-EDj"/>
                     <connections>
+                        <outlet property="bearButton" destination="2m4-3P-0aL" id="y6Y-xs-zPy"/>
                         <outlet property="catButton" destination="UTx-jG-XrT" id="o6f-Gi-J6e"/>
                         <outlet property="dogButton" destination="3JD-pC-9En" id="0cI-7h-0Y8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WM-Uz-miR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="123.68815592203899"/>
+            <point key="canvasLocation" x="123.75" y="123.59154929577466"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -65,11 +78,15 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PAWsitive" translatesAutoresizingMaskIntoConstraints="NO" id="ql2-7O-dJV">
+                                <rect key="frame" x="16" y="64" width="288" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONu-6Y-e0M">
-                                <rect key="frame" x="30" y="420" width="315" height="60"/>
+                                <rect key="frame" x="16" y="420" width="288" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Show Cat Puns">
@@ -79,10 +96,6 @@
                                     <action selector="punPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bc-zg-ZqW"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PAWsitive" translatesAutoresizingMaskIntoConstraints="NO" id="ql2-7O-dJV">
-                                <rect key="frame" x="0.0" y="64" width="375" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -93,7 +106,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.2" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1053.75" y="123.59154929577466"/>
+        </scene>
+        <!--Bear View Controller-->
+        <scene sceneID="QFy-1n-FTW">
+            <objects>
+                <viewController id="jva-PG-BbM" customClass="BearViewController" customModule="Cat_Puns" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qbD-wb-XgL"/>
+                        <viewControllerLayoutGuide type="bottom" id="3zM-I5-jfg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XOr-NE-wIF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Impawsible" translatesAutoresizingMaskIntoConstraints="NO" id="yNr-Am-7jd">
+                                <rect key="frame" x="16" y="64" width="288" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5b-05-1zy">
+                                <rect key="frame" x="0.0" y="402" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show Bear Puns"/>
+                                <connections>
+                                    <action selector="bearPressed:" destination="jva-PG-BbM" eventType="touchUpInside" id="cEa-Ux-jTv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bearButton" destination="I5b-05-1zy" id="QZm-wg-JCj"/>
+                        <outlet property="bearImage" destination="yNr-Am-7jd" id="SP0-Pn-bhw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77K-1p-K7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817.5" y="795.42253521126759"/>
         </scene>
         <!--Dog View Controller-->
         <scene sceneID="kJH-ot-YPb">
@@ -104,11 +154,15 @@
                         <viewControllerLayoutGuide type="bottom" id="hJF-qY-hfB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pnc-nb-Z18">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pugtato" translatesAutoresizingMaskIntoConstraints="NO" id="4pf-gH-EY8">
+                                <rect key="frame" x="16" y="64" width="288" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2W-wL-yYR">
-                                <rect key="frame" x="30" y="469" width="315" height="79"/>
+                                <rect key="frame" x="16" y="412" width="288" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Show Dog Puns">
@@ -118,10 +172,6 @@
                                     <action selector="dogPunPressed:" destination="TR6-uE-Aej" eventType="touchUpInside" id="8ly-Eb-uxD"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pugtato" translatesAutoresizingMaskIntoConstraints="NO" id="4pf-gH-EY8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="308"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -133,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAB-Vf-TgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="677.60000000000002" y="846.9265367316342"/>
+            <point key="canvasLocation" x="676.875" y="846.12676056338034"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Od-qt-I61">
@@ -155,7 +205,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bear Waving" width="800" height="937"/>
         <image name="Dog" width="424" height="335"/>
+        <image name="Impawsible" width="479" height="308"/>
         <image name="PAWsitive" width="880" height="656"/>
         <image name="Pugtato" width="605" height="605"/>
         <image name="cute-cat-11" width="500" height="652"/>
